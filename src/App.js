@@ -27,7 +27,7 @@ class App extends Component {
     var options=null;
     if(this.state.sectors[chartIndex]!=null){
       options=[]
-      extraQueryParams='?sector='+this.state.sectors[chartIndex]+'&byCountry=yes';
+      extraQueryParams='?sector='+this.state.sectors[chartIndex].replace('&','%26')+'&byCountry=yes';
       fetch(apiURL+'allSectors').then(response => {return response.json()})
         .then((responseJSON) =>{          
           responseJSON.forEach(function(point){
