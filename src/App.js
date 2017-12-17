@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Visualizer from './Visualizer.js';
 import './App.css';
 
-const apiURL='http://localhost:8080/';
+const apiURL='https://api.quickfinstats.com/';
 const queryTypes=['equityRiskPremiums', 'currencyRates?country=all', 'currencyRates','bondYields','riskByIndustryPublic','riskByIndustryPrivate'];
 const chartTypes=['choropleth', 'choropleth', 'bar', 'choropleth', 'choropleth', 'choropleth', 'choropleth'];
 const chartTitles=['Equity Risk Premiums', 'Risk-free rates by country', 'Risk-free rates by currency', 'Government Bond Yields', 'Public Company Risk', 'Private Company Risk'];
